@@ -1,0 +1,7 @@
+# En github.com/TU_USUARIO/TU_REPO_NUEVO/config-data/ms-tour-package.yaml
+spring:
+  datasource:
+    url: jdbc:postgresql://db:5432/travel_agency
+    username: user
+    password: password
+# Aquí también irían las configuraciones de Keycloak (Resource Server), etc.

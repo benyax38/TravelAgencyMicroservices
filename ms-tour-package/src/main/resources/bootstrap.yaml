@@ -1,0 +1,8 @@
+# ms-tour-package/src/main/resources/bootstrap.yaml
+spring:
+  application:
+    name: ms-tour-package # Este nombre DEBE coincidir con el archivo en tu repo
+  cloud:
+    config:
+      uri: http://config-service:8081 # Dirección del contenedor de tu config-server
+      fail-fast: true
