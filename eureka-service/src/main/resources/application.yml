@@ -1,0 +1,13 @@
+server:
+  port: 8761
+
+eureka:
+  client:
+    # Estas dos líneas son las más importantes:
+    # Le dicen al Eureka: "No intentes registrarte como cliente en otro servidor"
+    register-with-eureka: false
+    fetch-registry: false
+  server:
+    # Esto es una buena práctica para que el servidor no espere réplicas
+    # de otros Eurekas (útil en desarrollo local).
+    wait-time-in-ms-when-sync-empty: 0
